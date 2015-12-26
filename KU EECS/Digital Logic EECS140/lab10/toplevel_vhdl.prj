@@ -1,0 +1,8 @@
+vhdl work "C:\Users\wscipio\Downloads\LEDdisplay.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\lab10\fourbitcounter.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\lab10\display_driver4.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\lab10\display_driver3.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\lab10\display_driver2.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\lab10\clock_divider.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\Lab8\Display_driver.vhd"
+vhdl work "\\fileserver.eecs.ku.edu\wscipio\EECS140\lab10\toplevel.vhd"

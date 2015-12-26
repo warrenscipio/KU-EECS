@@ -1,0 +1,37 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.16 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/Lab8/Display_driver.vhd" in Library work.
+Architecture behavioral of Entity display_driver is up to date.
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/display_driver2.vhd" in Library work.
+Architecture behavioral of Entity display_driver2 is up to date.
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/display_driver3.vhd" in Library work.
+Architecture behavioral of Entity display_driver3 is up to date.
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/display_driver4.vhd" in Library work.
+Architecture behavioral of Entity display_driver4 is up to date.
+Compiling vhdl file "C:/Users/wscipio/Downloads/LEDdisplay.vhd" in Library work.
+Architecture procedural of Entity mux4by7 is up to date.
+Architecture structural of Entity leddisplay is up to date.
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/fourbitcounter.vhd" in Library work.
+Architecture behavioral of Entity fourbitcounter is up to date.
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/clock_divider.vhd" in Library work.
+Architecture behavioral of Entity clock_divider is up to date.
+Compiling vhdl file "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/toplevel.vhd" in Library work.
+Entity <toplevel> compiled.
+ERROR:HDLParsers:164 - "//fileserver.eecs.ku.edu/wscipio/EECS140/lab10/toplevel.vhd" Line 126. parse error, unexpected INTEGER_LITERAL
+CPU : 1.10 / 1.26 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 171964 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

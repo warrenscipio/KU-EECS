@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/home/126/w/wscipio/EECS168/pokemon/.metadata/.plugins/org.eclipse.jdt.core
+2891597253.index
+1976144809.index

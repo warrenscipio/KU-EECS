@@ -1,0 +1,37 @@
+ command line:
+   ./gatedDlatch_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  3612
+
+Thu Apr 11 09:54:49 2013
+
+Total Line Count : 16
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 169.366 Meg. 
+
+ Total Signals          : 7
+ Total Nets             : 7
+ Total Signal Drivers   : 5
+ Total Blocks           : 2
+ Total Primitive Blocks : 1
+ Total Processes        : 5
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 7
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isim force add clk 1 -radix default -value 0 -radix default -time 5 ns -repeat 10 ns 
+isim force add d 1 -radix default -value 0 -radix default -time 15 ns -repeat 30 ns 
+isimrun 100 ns 
+
+ Simulation time 0.0624 sec.
+
+ Estimate current memory usage : 176.181 Meg. 
+
+Thu Apr 11 09:59:07 2013
+

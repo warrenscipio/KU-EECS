@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class OddSum {
+	
+	public void main(String[] args){
+	
+		double number; 
+		double value;
+		
+		
+		
+		System.out.print("Please input a positive odd integer as the end Value: ");
+	
+		Scanner input = new Scanner(System.in);
+		number = input.nextDouble();
+		
+		
+		do
+		{
+			value = number-2;
+			
+			
+		}while (number > 0);
+		
+		System.out.print("The summation is: "+ value);
+		
+		
+	}
+
+}
+

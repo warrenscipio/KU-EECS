@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+Release 9.2i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise H:/EECS140/lab5/lab5.ise -intstyle ise -e 3
+-s 4 -xml toplevel toplevel.ncd -o toplevel.twr toplevel.pcf -ucf
+toplevelucl.ucf
+
+Design file:              toplevel.ncd
+Physical constraint file: toplevel.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.26 2007-04-13)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switches<0>    |sevenseg<0>    |    7.146|
+switches<0>    |sevenseg<1>    |    7.146|
+switches<0>    |sevenseg<2>    |    7.296|
+switches<0>    |sevenseg<3>    |    7.795|
+switches<0>    |sevenseg<4>    |    6.665|
+switches<0>    |sevenseg<5>    |    6.805|
+switches<0>    |sevenseg<6>    |    6.575|
+switches<1>    |sevenseg<0>    |    7.483|
+switches<1>    |sevenseg<1>    |    7.483|
+switches<1>    |sevenseg<2>    |    7.681|
+switches<1>    |sevenseg<3>    |    8.074|
+switches<1>    |sevenseg<4>    |    7.050|
+switches<1>    |sevenseg<5>    |    7.084|
+switches<1>    |sevenseg<6>    |    6.933|
+switches<2>    |sevenseg<0>    |    7.279|
+switches<2>    |sevenseg<1>    |    7.279|
+switches<2>    |sevenseg<2>    |    8.183|
+switches<2>    |sevenseg<3>    |    7.863|
+switches<2>    |sevenseg<4>    |    7.552|
+switches<2>    |sevenseg<5>    |    6.873|
+switches<2>    |sevenseg<6>    |    7.404|
+switches<3>    |sevenseg<0>    |    7.198|
+switches<3>    |sevenseg<1>    |    7.198|
+switches<3>    |sevenseg<2>    |    8.456|
+switches<3>    |sevenseg<3>    |    7.820|
+switches<3>    |sevenseg<4>    |    7.825|
+switches<3>    |sevenseg<5>    |    6.830|
+switches<3>    |sevenseg<6>    |    7.670|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Mar 07 09:41:30 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 135 MB
+
+
+

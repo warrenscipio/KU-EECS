@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+body{
+	margin:0;
+	padding:0;
+	font-size:13px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#ffffff;
+	background: #151515 url(../images/blurred-city.jpg) no-repeat fixed;
+
+	}
+
+
+
+
+video, object{
+ margin: -40px 100px 70px 0px;
+
+ position:fixed;
+ top: 0;
+}
+
+img{margin:0; padding:0; border:none;}
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{list-style-type:none; margin:0; padding:0;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:inline-block;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none; color: #c55500; }
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #DEDACB; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{
+	position:relative;
+	margin:0px 0px 30px 460px;
+	width:460px;
+	text-align:left;
+
+	}
+
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{
+	margin:0 0 0px 0;
+	padding:0;
+	font-size:16px;
+	font-weight:normal;
+	font-style:normal;
+	line-height:normal;
+
+	}
+
+.row1{color:#999999; background-color:#06213F;}
+.row1 a{color:#FCFCFC; background-color:#06213F;}
+.row2, .row3, .row4{color:#979797; background:  }
+
+/* ----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer{
+	display:block;
+	width:360px;
+	margin:40px 40px 0px 40px;
+	}
+
+	#sidebar{
+		display:block;
+		width:360px;
+		}
+
+.rnd{
+	display:block;
+	width:360px;
+	padding:12px 0 0 0;
+	/*background:url("../images/transtop.png") top left no-repeat;*/
+	}
+
+
+/* ----------------------------------------------Header-------------------------------------*/
+
+#header{padding:25px 0 0 0;}
+
+#header h1, #header p, #header ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	line-height:normal;
+	}
+
+#header h1{font-size:36px; font-variant:small-caps; font-style:normal;}
+
+#header .fl_right{
+	display:block;
+	width:360px;
+	}
+
+#header .fl_right ul{
+	margin-bottom:10px;
+	font-size:11px;
+	}
+
+#header .fl_right li{
+	display:inline;
+	margin:0 4px 0 0;
+	padding:0 6px 0 0;
+	border-right:1px solid #FCFCFC;
+	}
+
+#header .fl_right li.last{
+	margin:0;
+	padding:0
+}
+
+/* ----------------------------------------------Content-------------------------------------*/
+
+#container{
+	width:350px;
+	padding:20px;
+	height:120%;
+	opacity:0.99;
+	border-radius: 30px;
+	background:url("../images/transmain.png") bottom left;
+	}
+
+#container a{
+	color:#c55500;
+
+	}
+
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{
+	padding-bottom:8px;
+	border-bottom:2px solid #DEDACB;
+	}
+
+#container .readmore{
+	display:block;
+	width:100%;
+	text-align:right;
+	line-height:normal;
+	}
+
+#content{
+	display:block;
+	float:left;
+	width:350px;
+}
+
+/*----------------------Side bar------------------------ */
+
+
+#sidebar{
+
+	border-radius: 25px;
+	float:left;
+	margin:40px 40px 0px 170px;
+	width:200px;
+	padding:20px;
+	height:30%;
+	opacity:0.99;
+	background:url("../images/transmain.png") bottom left;
+
+
+}
+
+
+
+/* Featured Block */
+
+
+#column #featured ul, #column #featured h2, #column #featured p{
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#666666;
+	background-color:#F7F7F7;
+	}
+
+
+
+
+/* ----------------------------------------------Footer-------------------------------------*/
+#footer {
+   position:relative;
+   bottom:0;
+   width:40%;
+   height:64px;   /* Height of the footer */
+   /*background: url("../images/transbottom.png") bottom left no-repeat;*/
+   margin:0px ;
+}

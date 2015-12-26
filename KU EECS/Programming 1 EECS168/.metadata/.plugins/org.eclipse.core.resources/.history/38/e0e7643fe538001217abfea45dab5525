@@ -1,0 +1,46 @@
+import java.util.Scanner;
+import java.util.Random;
+
+
+public class Rearranging_Cartons {
+	
+	public static void main(String[] args){
+		
+		
+		int numberCarts;
+		Random random;
+		int[] carts;
+		int temp;
+		random = new Random();
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Sample input:");
+		numberCarts = input.nextInt();
+		
+		carts = new int[numberCarts];
+		
+		for (int i=0;i<numberCarts;i++){
+			carts[i]=random.nextInt(100);
+			
+		}
+		
+		for(int i=0;i<numberCarts;i++)
+			System.out.print(carts[i]+" ");
+		
+		do{
+			cart
+			
+			
+			
+			
+		}while()
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

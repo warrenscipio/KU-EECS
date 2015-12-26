@@ -1,0 +1,7 @@
+EN leddisplay NULL C:/Xilinx92i/lab_11/LEDdisplay.vhd sub00/vhpl05 1354559554
+EN display_driver NULL C:/Xilinx92i/lab_11/display_driver3.vhd sub00/vhpl04 1354558714
+EN message_clk NULL C:/Xilinx92i/lab_11/message_clk.vhd sub00/vhpl00 1354555268
+AR message_clk behavioral C:/Xilinx92i/lab_11/message_clk.vhd sub00/vhpl01 1354555269
+AR counter behavioral C:/Xilinx92i/lab_11/4bit_counter.vhd sub00/vhpl03 1354559266
+EN counter NULL C:/Xilinx92i/lab_11/4bit_counter.vhd sub00/vhpl02 1354559265
+AR leddisplay behavioral C:/Xilinx92i/lab_11/LEDdisplay.vhd sub00/vhpl06 1354559555

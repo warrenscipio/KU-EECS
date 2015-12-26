@@ -1,0 +1,16 @@
+ 
+ 
+ 
+ for  lambda .2:.1:.6
+  for 5 times
+    srand
+    generate data
+    start timer
+    hashing method 1
+    stop timer
+    start timer
+    hashing meathod 2 stop timer
+    
+   end
+   
+ end

@@ -1,0 +1,26 @@
+count class is a templet holding the count value and the item
+
+main is reading in 3 objects
+
+countarray (private 
+		<T>* array
+		int arraySize
+		un numItemstroed
+		(out array();
+		coutarray cost count
+		~counAray()
+
+		getnumItemStored
+		count<T) getItem (int which)
+
+
+ 		void bumpCout()
+
+
+executive 
+	most of the meathods r on the website
+	define 3 arrays of 3 different types
+	template< type T >
+	static void print(countarray<T>arr
+	read()=> read will .open the files 
+

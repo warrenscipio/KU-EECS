@@ -1,0 +1,27 @@
+advance makefile
+Gcov
+Lcov
+unit testing
+input/output redirect
+
+-------------------------------------------------------------------
+//echo displays to terminal
+TCLASS = "all files"
+CXXFLAGS = -c -g -std=c++11
+CXX=g++
+PROFILE = -fprofile-arcs -ftest-coveage 
+
+
+tests: $(TCLASS) unitTest.cpp
+	$(CXX) $(CXXFLAGS) $(PROFILE) unitTest.cpp
+
+
+coverage:
+
+	$(LCOV_LOCAL)lcov
+
+
+
+People.eecs.ku.edu/~hvan
+
+

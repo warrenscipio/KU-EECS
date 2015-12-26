@@ -1,0 +1,8 @@
+vhdl work "C:/Users/wscipio/Downloads/LEDdisplay.vhd"
+vhdl work "fourbitcounter.vhd"
+vhdl work "display_driver4.vhd"
+vhdl work "display_driver3.vhd"
+vhdl work "display_driver2.vhd"
+vhdl work "clock_divider.vhd"
+vhdl work "../Lab8/Display_driver.vhd"
+vhdl work "toplevel.vhd"
