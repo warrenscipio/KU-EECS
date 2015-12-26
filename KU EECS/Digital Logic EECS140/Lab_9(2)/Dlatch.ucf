@@ -1,6 +1,0 @@
-
-
-NET "D" LOC = "G18" | IOSTANDARD = LVCMOS33; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
-NET "Clk" LOC = "H18" | IOSTANDARD = LVCMOS33; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = SW1
-
-NET "Q" LOC = "J14" | IOSTANDARD = LVCMOS33; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = SW1

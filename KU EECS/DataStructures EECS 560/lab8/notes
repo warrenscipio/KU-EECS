@@ -1,8 +1,0 @@
- 
-recursion ends in two possible ways
-
-
-
-Leftist = rank(left_child(x)) >= rank(right_child(x))'
-"just turn leftist into skew"
- Skew  no rank  

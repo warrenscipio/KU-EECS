@@ -1,6 +1,0 @@
-AR twobitxor behavioral //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/twobitxor.vhd sub00/vhpl02 1363274280
-EN sixbitxor NULL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/sixbitxor.vhd sub00/vhpl04 1363274283
-AR threebitxor structural //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/threebitxor.vhd sub00/vhpl03 1363274282
-AR sixbitxor structural //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/sixbitxor.vhd sub00/vhpl05 1363274284
-EN twobitxor NULL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/twobitxor.vhd sub00/vhpl01 1363274279
-EN threebitxor NULL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/threebitxor.vhd sub00/vhpl00 1363274281

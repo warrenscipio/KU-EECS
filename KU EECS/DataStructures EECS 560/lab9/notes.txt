@@ -1,8 +1,0 @@
- 
-merging t1 and t2
-
-t1->ls = T1->fc->ls
-t2->ls->rs=t2
-t1->fc->ls->=t2
-change t1s order
-t1 oder= t1order +1 

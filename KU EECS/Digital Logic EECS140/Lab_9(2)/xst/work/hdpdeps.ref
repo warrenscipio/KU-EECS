@@ -1,8 +1,0 @@
-V3 3
-FL //fileserver.eecs.ku.edu/wscipio/EECS140/Lab_9(2)/gatedDlatch.vhd 2013/04/11.10:04:25 J.36
-EN work/gatedDlatch 1365692585 \
-      FL //fileserver.eecs.ku.edu/wscipio/EECS140/Lab_9(2)/gatedDlatch.vhd \
-      PB ieee/std_logic_1164 1177545575
-AR work/gatedDlatch/Structural 1365692586 \
-      FL //fileserver.eecs.ku.edu/wscipio/EECS140/Lab_9(2)/gatedDlatch.vhd \
-      EN work/gatedDlatch 1365692585

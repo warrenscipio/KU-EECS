@@ -1,8 +1,0 @@
-INDEX VERSION 1.126+/home/126/w/wscipio/EECS168/Android/.metadata/.plugins/org.eclipse.jdt.core
-2531109689.index
-3815460856.index
-2011752982.index
-2636104616.index
-2189615292.index
-735611175.index
-2517820905.index
