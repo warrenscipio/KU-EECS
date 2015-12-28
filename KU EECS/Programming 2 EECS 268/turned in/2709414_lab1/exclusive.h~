@@ -1,0 +1,9 @@
+
+class exclusive{
+public:
+	void read();
+	void print();
+
+
+
+};

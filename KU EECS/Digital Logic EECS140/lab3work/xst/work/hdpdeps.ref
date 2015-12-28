@@ -1,0 +1,9 @@
+V3 7
+FL //galileo.eecs.ku.edu/wscipio/EECS140/lab3work/circuit1.vhf 2013/02/14.10:08:57 J.36
+EN work/circuit1 1360858042 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/lab3work/circuit1.vhf \
+      PB ieee/std_logic_1164 1177545575 PH ieee/NUMERIC_STD 1177545583 LB UNISIM \
+      PH unisim/VCOMPONENTS 1177545586
+AR work/circuit1/BEHAVIORAL 1360858043 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/lab3work/circuit1.vhf \
+      EN work/circuit1 1360858042 CP INV CP AND2 CP OR3

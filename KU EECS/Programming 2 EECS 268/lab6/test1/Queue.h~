@@ -1,0 +1,33 @@
+#ifndef _QUEUE_
+#define _QUEUE_
+
+
+#include <string>
+
+
+using namespace std;
+ 
+class Queue{
+
+
+public:
+	Queue();
+	addToQueue();
+	
+	
+	
+	
+			
+	
+	
+	
+	
+private:
+	
+	
+	
+
+
+};
+
+#endif

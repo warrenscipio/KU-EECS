@@ -1,0 +1,12 @@
+ 
+average for BST at50000: 0.0165334
+average for 2-3 at50000: 0.0274348
+
+average for BST at100000: 0.0529772
+average for 2-3 at100000: 0.0766028
+
+average for BST at200000: 0.132681
+average for 2-3 at200000: 0.161481
+
+average for BST at400000: 0.316523
+average for 2-3 at400000: 0.314742

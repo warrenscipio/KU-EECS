@@ -1,0 +1,11 @@
+lab3:	main.o Executive.o
+	g++ main.o Executive.o -o lab3
+
+main.o: main.cpp
+	g++ -c -g main.cpp
+
+Executive.o: Executive.cpp Executive.h 
+	g++ -c -g Executive.cpp 
+
+clean:
+	rm lab3 *.o

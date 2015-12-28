@@ -1,0 +1,156 @@
+// test.c++
+
+#include <iostream>
+#include <math.h>
+#include "ModelViewWithPhongLighting.h"
+#include "test.h"
+#include "ShaderIF.h"
+
+typedef float vec3[3];
+int changeColor;
+
+// index lists for the three faces that can't be drawn with glDrawArrays
+GLuint test::indexList[3][4] = {
+	{ 6, 7, 0, 1 }, // xmin face
+	{ 6, 0, 4, 2 }, // ymin face
+	{ 1, 7, 3, 5 }  // ymax face
+};
+
+test::test(float cx, float cy, float cz, float lx, float ly, float lz, double color)
+{
+	xmin = cx; xmax = cx + lx;
+	ymin = cy; ymax = cy + ly;
+	zmin = cz; zmax = cz + lz;
+	changeColor=color;
+
+	definetest();
+}
+
+test::~test()
+{
+	glDeleteBuffers(3,ebo);
+	glDeleteBuffers(1, vbo);
+	glDeleteVertexArrays(1, vao);
+}
+
+void test::definetest()
+{
+	vec3 vtx[] = { // The 8 unique vertices (Note the order)
+		{xmin ,ymin, zmax}, {xmin, ymax, zmax},
+		{xmax, ymin, zmax}, {xmax, ymax, zmax},
+		{xmax, ymin, zmin}, {xmax, ymax, zmin},
+		{xmin, ymin, zmin}, {xmin, ymax, zmin}
+	};
+	glGenVertexArrays(1, vao);
+	glBindVertexArray(vao[0]);
+
+	glGenBuffers(1, vbo);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo[0]);
+	glBufferData(GL_ARRAY_BUFFER, 8*sizeof(vec3), vtx, GL_STATIC_DRAW);
+	glVertexAttribPointer(pvaLoc_mcPosition, 3, GL_FLOAT, GL_FALSE, 0, 0);
+	glEnableVertexAttribArray(pvaLoc_mcPosition);
+
+	glGenBuffers(3, ebo);
+	for (int i=0 ; i<3 ; i++)
+	{
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[i]);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, 4*sizeof(GLuint), indexList[i], GL_STATIC_DRAW);
+	}
+
+	glDisableVertexAttribArray(pvaLoc_mcNormal);
+}
+
+// xyzLimits: {mcXmin, mcXmax, mcYmin, mcYmax, mcZmin, mcZmax}
+void test::getMCBoundingBox(double* xyzLimits) const
+{
+	xyzLimits[0] = xmin;
+	xyzLimits[1] = xmax;
+	xyzLimits[2] = ymin;
+	xyzLimits[3] = ymax;
+	xyzLimits[4] = zmin;
+	xyzLimits[5] = zmax;
+}
+
+void test::handleCommand(unsigned char key, double ldsX, double ldsY)
+{
+	if (key == 'b')
+		displaytestFill = !displaytestFill;
+	else if (key == 'B')
+		displaytestEdges = !displaytestEdges;
+	else
+		this->ModelView::handleCommand(key, ldsX, ldsY);
+}
+
+void test::rendertest(float* color)
+{
+	glBindVertexArray(vao[0]);
+	glUniform3fv(ppuLoc_kd, 1, color);
+
+	// The three faces that can be drawn with glDrawArrays
+	glVertexAttrib3f(pvaLoc_mcNormal, 0.0, 0.0, 1.0);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	glVertexAttrib3f(pvaLoc_mcNormal, 1.0, 0.0, 0.0);
+	glDrawArrays(GL_TRIANGLE_STRIP, 2, 4);
+	glVertexAttrib3f(pvaLoc_mcNormal, 0.0, 0.0, -1.0);
+	glDrawArrays(GL_TRIANGLE_STRIP, 4, 4);
+
+	// The three faces that are drawn with glDrawElements
+	glVertexAttrib3f(pvaLoc_mcNormal, -1.0, 0.0, 0.0);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[0]);
+	//glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_INT, NULL);
+	//glVertexAttrib3f(pvaLoc_mcNormal, 0.0, -1.0, 0.0);
+//	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[1]);
+	glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_INT, NULL);
+	glVertexAttrib3f(pvaLoc_mcNormal, 0.0, 1.0, 0.0);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[2]);
+	glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_INT, NULL);
+}
+
+void test::render()
+{
+	GLint pgm;
+	glGetIntegerv(GL_CURRENT_PROGRAM, &pgm);
+	glUseProgram(shaderProgram);
+
+	cryph::Matrix4x4 mc_ec, ec_lds;
+	getMatrices(mc_ec, ec_lds);
+	float mat[16];
+	glUniformMatrix4fv(ppuLoc_mc_ec, 1, false, mc_ec.extractColMajor(mat));
+	glUniformMatrix4fv(ppuLoc_ec_lds, 1, false, ec_lds.extractColMajor(mat));
+
+	double r=0;
+	double g=0;
+	double b=0;
+
+	switch(changeColor){
+		case 1:
+		 	r=0.2; g=0.2; b=0.2;//grey
+			break;
+		case 2:
+		 r=0.8; g=0.2; b=0.2;//red
+			break;
+		case 3:
+		 r=0.2; g=0.2; b=0.8;//blue
+			break;
+		case 4:
+		 r=0.7; g=0.7; b=0.2;//gold
+				break;
+		case 5:
+			 r=0.8; g=0.8; b=0.8;//silver
+			break;
+
+		case 6:
+			 r=0.3; g=0.8; b=0.3;//green
+			break;
+
+		}
+
+	float	bColor[] = { r, g, b };
+	float ka[] = {r, g, b };
+	glUniform3fv(ppuLoc_ka, 1, ka);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	rendertest(bColor);
+
+	establishLights();
+	glUseProgram(pgm);
+}

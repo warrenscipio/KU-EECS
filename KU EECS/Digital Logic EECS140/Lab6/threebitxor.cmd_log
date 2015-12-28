@@ -1,0 +1,13 @@
+xst -ise "C:/Xilinx92i/Lab6/Lab6.ise" -intstyle ise -ifn threebitxor.xst -ofn threebitxor.syr
+xst -ise "C:/Xilinx92i/Lab6/Lab6.ise" -intstyle ise -ifn threebitxor.xst -ofn threebitxor.syr
+ngdbuild -ise "C:/Xilinx92i/Lab6/Lab6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "threebitxor.ngc" threebitxor.ngd
+map -ise "C:/Xilinx92i/Lab6/Lab6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o threebitxor_map.ncd threebitxor.ngd threebitxor.pcf
+par -ise "C:/Xilinx92i/Lab6/Lab6.ise" -w -intstyle ise -ol std -t 1 threebitxor_map.ncd threebitxor.ncd threebitxor.pcf
+trce -ise "C:/Xilinx92i/Lab6/Lab6.ise" -intstyle ise -e 3 -s 4 -xml threebitxor threebitxor.ncd -o threebitxor.twr threebitxor.pcf
+bitgen -ise "C:/Xilinx92i/Lab6/Lab6.ise" -intstyle ise -f threebitxor.ut threebitxor.ncd
+xst -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -ifn threebitxor.xst -ofn threebitxor.syr
+ngdbuild -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "threebitxor.ngc" threebitxor.ngd
+map -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o threebitxor_map.ncd threebitxor.ngd threebitxor.pcf
+par -ise "H:/EECS140/Lab6/Lab6.ise" -w -intstyle ise -ol std -t 1 threebitxor_map.ncd threebitxor.ncd threebitxor.pcf
+trce -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -e 3 -s 4 -xml threebitxor threebitxor.ncd -o threebitxor.twr threebitxor.pcf
+bitgen -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -f threebitxor.ut threebitxor.ncd

@@ -1,0 +1,42 @@
+package edu.ku.eecs168.circleGame;
+
+public class Circle {
+
+	private int xPosition;
+	private int yPosition;
+	private boolean visible;
+	private int color;
+	private int directionX;
+	private int directionY;
+	private boolean initialized;
+	private int diameter;
+	
+	public Circle(){
+		xPosition =0;
+		yPosition =0;
+		visible = true;
+		color = 0;
+		directionX = 0;
+		directionY = 0;
+		initialized = false;
+		diameter = 100;
+		
+				
+			
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+}

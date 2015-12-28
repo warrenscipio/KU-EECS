@@ -1,0 +1,4 @@
+NET "A" LOC = "G18";
+NET "B" LOC = "H18";
+NET "C" LOC = "K18";
+NET "Y" LOC = "J14";

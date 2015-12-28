@@ -1,0 +1,41 @@
+# include "exclusive.h"
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+/*
+void read(){
+
+std::ifstream inp("sample.txt");
+double num;
+while (inp >> thing) // implicitly assume no parse errors
+{
+    …
+}
+
+}
+*/
+void print (std::ostream &os)
+{
+	os << "" << "\n";
+}
+
+
+
+
+int main ()
+{
+/*
+  fropen ("Number.txt", "r",stdin);
+  cout << read();  
+*/
+
+
+  ofstream myoutputfile;
+  myoutputfile.open("out.txt");
+  print (myoutputfile);
+  return 0;
+
+}

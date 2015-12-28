@@ -1,0 +1,8 @@
+main: main.o Complex.o
+	g++ -g -o main main.o Complex.o
+
+main.o: Complex.h main.c++
+	g++ -g -c main.c++
+
+Complex.o: Complex.h Complex.c++
+	g++ -g -c Complex.c++

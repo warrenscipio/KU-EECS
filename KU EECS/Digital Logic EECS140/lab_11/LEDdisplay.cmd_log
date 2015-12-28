@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/lab_11/lab_11.ise" -intstyle ise -ifn LEDdisplay.xst -ofn LEDdisplay.syr

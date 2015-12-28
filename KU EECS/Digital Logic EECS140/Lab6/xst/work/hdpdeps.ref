@@ -1,0 +1,27 @@
+V3 13
+FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/sixbitxor.vhd 2013/03/14.10:07:21 J.36
+EN work/sixbitxor 1363274283 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/sixbitxor.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/sixbitxor/Structural 1363274284 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/sixbitxor.vhd \
+      EN work/sixbitxor 1363274283 CP threebitxor CP twobitxor
+FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/threebitxor.vhd 2013/03/14.09:50:11 J.36
+EN work/threebitxor 1363274281 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/threebitxor.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/threebitxor/Structural 1363274282 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/threebitxor.vhd \
+      EN work/threebitxor 1363274281 CP twobitxor
+FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/twobitxor.vhd 2013/03/14.09:28:37 J.36
+EN work/twobitxor 1363274279 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/twobitxor.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/twobitxor/Behavioral 1363274280 \
+      FL //galileo.eecs.ku.edu/wscipio/EECS140/Lab6/twobitxor.vhd \
+      EN work/twobitxor 1363274279
+FL $XILINX/Lab6/threebitxor.vhd 2013/03/14.09:50:11 J.36
+FL $XILINX/Lab6/twobitxor.vhd 2013/03/14.09:28:37 J.36

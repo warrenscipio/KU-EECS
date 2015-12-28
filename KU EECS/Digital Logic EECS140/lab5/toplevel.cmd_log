@@ -1,0 +1,7 @@
+xst -ise "H:/EECS140/lab5/lab5.ise" -intstyle ise -ifn toplevel.xst -ofn toplevel.syr
+ngdbuild -ise "H:/EECS140/lab5/lab5.ise" -intstyle ise -dd _ngo -nt timestamp -uc "toplevelucl.ucf" -p xc3s500e-fg320-4 "toplevel.ngc" toplevel.ngd
+ngdbuild -ise "H:/EECS140/lab5/lab5.ise" -intstyle ise -dd _ngo -nt timestamp -uc "toplevelucl.ucf" -p xc3s500e-fg320-4 "toplevel.ngc" toplevel.ngd
+map -ise "H:/EECS140/lab5/lab5.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o toplevel_map.ncd toplevel.ngd toplevel.pcf
+par -ise "H:/EECS140/lab5/lab5.ise" -w -intstyle ise -ol std -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf
+trce -ise "H:/EECS140/lab5/lab5.ise" -intstyle ise -e 3 -s 4 -xml toplevel toplevel.ncd -o toplevel.twr toplevel.pcf -ucf toplevelucl.ucf
+bitgen -ise "H:/EECS140/lab5/lab5.ise" -intstyle ise -f toplevel.ut toplevel.ncd

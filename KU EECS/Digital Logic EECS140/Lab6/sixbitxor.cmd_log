@@ -1,0 +1,11 @@
+xst -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -ifn sixbitxor.xst -ofn sixbitxor.syr
+ngdbuild -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -dd _ngo -nt timestamp -uc "ucf.ucf" -p xc3s500e-fg320-4 "sixbitxor.ngc" sixbitxor.ngd
+map -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o sixbitxor_map.ncd sixbitxor.ngd sixbitxor.pcf
+par -ise "H:/EECS140/Lab6/Lab6.ise" -w -intstyle ise -ol std -t 1 sixbitxor_map.ncd sixbitxor.ncd sixbitxor.pcf
+trce -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -e 3 -s 4 -xml sixbitxor sixbitxor.ncd -o sixbitxor.twr sixbitxor.pcf -ucf ucf.ucf
+bitgen -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -f sixbitxor.ut sixbitxor.ncd
+ngdbuild -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -dd _ngo -nt timestamp -uc "ucf.ucf" -p xc3s500e-fg320-4 "sixbitxor.ngc" sixbitxor.ngd
+map -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o sixbitxor_map.ncd sixbitxor.ngd sixbitxor.pcf
+par -ise "H:/EECS140/Lab6/Lab6.ise" -w -intstyle ise -ol std -t 1 sixbitxor_map.ncd sixbitxor.ncd sixbitxor.pcf
+trce -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -e 3 -s 4 -xml sixbitxor sixbitxor.ncd -o sixbitxor.twr sixbitxor.pcf -ucf ucf.ucf
+bitgen -ise "H:/EECS140/Lab6/Lab6.ise" -intstyle ise -f sixbitxor.ut sixbitxor.ncd
