@@ -1,9 +1,0 @@
- 
-find $1 -name '*'.[ch] | xargs grep -c $2 | sort -t : +1.0 -2.0 --numeric --reverse | head --lines=$3
-the $1-name '*' means find /bash4.2/ -name {all files with the extention c or h
-
-so the output from that first part gets passed to the next thing, xargs get arugments from the list of files and find grep counts how many 'execute's are in that list of files
-
-next line sorts by cols + acending - decending numeric and in reverse
-
-returns '20' of the final output the sorted files

@@ -1,8 +1,0 @@
-V3 3
-FL //galileo.eecs.ku.edu/wscipio/EECS140/lab5/toplevel.vhd 2013/03/07.09:38:32 J.36
-EN work/toplevel 1362670605 \
-      FL //galileo.eecs.ku.edu/wscipio/EECS140/lab5/toplevel.vhd \
-      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
-      PB ieee/STD_LOGIC_UNSIGNED 1177545583
-AR work/toplevel/Behavioral 1362670606 \
-      FL //galileo.eecs.ku.edu/wscipio/EECS140/lab5/toplevel.vhd EN work/toplevel 1362670605

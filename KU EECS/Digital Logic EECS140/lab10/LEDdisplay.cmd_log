@@ -1,6 +1,0 @@
-xst -ise "H:/EECS140/lab10/lab10.ise" -intstyle ise -ifn LEDdisplay.xst -ofn LEDdisplay.syr
-ngdbuild -ise "H:/EECS140/lab10/lab10.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "LEDdisplay.ngc" LEDdisplay.ngd
-map -ise "H:/EECS140/lab10/lab10.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o LEDdisplay_map.ncd LEDdisplay.ngd LEDdisplay.pcf
-par -ise "H:/EECS140/lab10/lab10.ise" -w -intstyle ise -ol std -t 1 LEDdisplay_map.ncd LEDdisplay.ncd LEDdisplay.pcf
-trce -ise "H:/EECS140/lab10/lab10.ise" -intstyle ise -e 3 -s 4 -xml LEDdisplay LEDdisplay.ncd -o LEDdisplay.twr LEDdisplay.pcf
-bitgen -ise "H:/EECS140/lab10/lab10.ise" -intstyle ise -f LEDdisplay.ut LEDdisplay.ncd
