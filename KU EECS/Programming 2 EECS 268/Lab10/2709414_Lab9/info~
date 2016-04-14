@@ -1,8 +1,0 @@
-required binary node structure
-*left pointer points to children 
-*right pointer points to siblings
-
-
-
-
-I think extra credit is creating a node with more than two nodes attached
